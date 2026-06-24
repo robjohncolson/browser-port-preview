@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>old_app browser reconstruction</title>
+    <script type="module" crossorigin src="./assets/index-I_bHvghG.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CZzux0Es.css">
+  </head>
+  <body>
+    <div id="app-shell">
+      <aside id="sidebar">
+        <h1>old_app Play Preview</h1>
+        <label>
+          Mode
+          <select id="stage-filter-select">
+            <option value="likely-playable">Play Preview</option>
+            <option value="all">Recovered Data View</option>
+          </select>
+        </label>
+        <label>
+          Stage
+          <select id="stage-select"></select>
+        </label>
+        <div id="play-preview-controls" class="play-preview-controls" aria-label="Play Preview controls"></div>
+        <div id="stage-info"></div>
+        <div id="first-run-hint" class="hint" aria-live="polite">
+          Play Preview opens on a curated stage with implemented mechanics and hides raw recovered-data clutter by default. Switch to Recovered Data View to inspect every converted stage.
+        </div>
+      </aside>
+      <main id="canvas-host">
+        <div id="mode-badge" class="mode-badge" aria-live="polite"></div>
+        <div id="stage-reason-badge" class="stage-reason-badge" aria-live="polite"></div>
+        <div id="title-overlay" class="title-overlay" aria-live="polite"></div>
+        <div id="controls-prompt-badge" class="controls-prompt-badge" aria-live="polite"></div>
+      </main>
+    </div>
+  </body>
+</html>
